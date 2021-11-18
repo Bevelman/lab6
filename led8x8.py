@@ -13,6 +13,6 @@ class led8x8():
     while True:
       for i in range(len(pat)):
         self.shifter.shiftByte(pat[i]) # load the row values
-        self.shifter.shiftByte(1 << (i-1)) # select the given row
+        self.shifter.shiftByte(1 << (i)) # select the given row
         self.shifter.latch()
       time.sleep(0.001)

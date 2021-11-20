@@ -1,0 +1,17 @@
+[[package]]
+name = "shifter"
+version = "2.75"
+description = "Transmission RPC Bindings"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "1f6a66bb6e132ddd6636aee1440853dd9617248e936130bad5cab4fb5b20dc8c"
+
+[metadata.files]
+shifter = [
+    {file = "shifter-2.75.tar.gz", hash = "sha256:866ed910d4c3f9caad36ceeb64ac3119e7bd8c0f84cbee1036e89dc822666743"},
+]

@@ -29,8 +29,7 @@ try:
         
 
 
-except Exception as e:   # catch everything, just in case
-  print(e)               # delete once code is debugged
+except KeyboardInterrupt:   # catch everything, just in case
   led.p.terminate()      # terminate the process
   led.p.join(2)          # wait up to 2 sec for process termination
                          # before ending code

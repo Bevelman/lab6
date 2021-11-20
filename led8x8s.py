@@ -1,7 +1,7 @@
 import time
 from shifter import Shifter
 
-class led8x8():
+class led8x8s():
   
   def __init__(self, data, latch, clock):
     self.shifter = Shifter(data, latch, clock)

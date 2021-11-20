@@ -6,9 +6,9 @@ import multiprocessing
 dataPin, latchPin, clockPin = 23, 24, 25
 led = led8x8(dataPin,latchPin,clockPin)
 for i in range(8):
-  led.pattern[i]=[0b00000000]
+  led.pattern[i]=0b00000000
   if i==4:
-    led.pattern[i]=[0b00010000]
+    led.pattern[i]=0b00010000
 
 try:
   for i in range(0,8):

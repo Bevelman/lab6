@@ -2,10 +2,7 @@ import time
 import multiprocessing
 from shifter import Shifter
 
-
-
 class led8x8():
-
   def __init__(self, data, latch, clock):
     self.shifter = Shifter(data, latch, clock)
     self.pattern = multiprocessing.Array('i',8)

@@ -3,10 +3,9 @@ import time
 from led8x8 import led8x8
 import multiprocessing
 
-dataPin, latchPin, clockPin = 23, 24, 25
-led = led8x8(dataPin,latchPin,clockPin)
-
 try:
+  dataPin, latchPin, clockPin = 23, 24, 25
+  led = led8x8(dataPin,latchPin,clockPin)
   while True:
     for i in range(0,8):
       if led.pattern[i]>0:
@@ -24,8 +23,6 @@ try:
         break
     time.sleep(0.1)
         
-
-
 except KeyboardInterrupt:   # catch everything, just in case
   led.p.terminate()      # terminate the process
   led.p.join(2)          # wait up to 2 sec for process termination

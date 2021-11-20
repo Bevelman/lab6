@@ -10,7 +10,7 @@ for i in range(8):
   if i==4:
     led.pattern[i]=0b00010000
 
-try:
+while True:
   for i in range(0,8):
     if led.pattern[i]>0:
       x=random.randint(0,3)
@@ -29,7 +29,7 @@ try:
         
 
 
-except KeyboardInterrupt:   # catch everything, just in case
-  led.p.terminate()      # terminate the process
-  led.p.join(2)          # wait up to 2 sec for process termination
+#except KeyboardInterrupt:   # catch everything, just in case
+#  led.p.terminate()      # terminate the process
+#  led.p.join(2)          # wait up to 2 sec for process termination
                          # before ending code

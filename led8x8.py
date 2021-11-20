@@ -12,6 +12,7 @@ class led8x8():
     self.p = multiprocessing.Process(target=self.display,args=(self.pattern,))
     self.p.daemon = True
     self.p.start
+    self.p.join
 
   def display(self):
     while True:
